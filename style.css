@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0f0a;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 20px;
+}
+
+.mobo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #0c120c;
+    border: 1px solid #2aff5c;
+    box-shadow: 0 0 20px rgba(42, 255, 92, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2aff5c;
+    padding-bottom: 15px;
+}
+
+.header-glow {
+    color: #2aff5c;
+    font-size: 24px;
+    text-shadow: 0 0 5px #2aff5c;
+    letter-spacing: 2px;
+}
+
+.user-line {
+    color: #5f9e6e;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.scan-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.mobo-btn {
+    background: #0c120c;
+    border: 2px solid #2aff5c;
+    color: #2aff5c;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.mobo-btn:hover {
+    background: #2aff5c;
+    color: #0a0f0a;
+    box-shadow: 0 0 15px #2aff5c;
+}
+
+.loading-panel {
+    background: #0f140f;
+    border: 1px solid #2aff5c;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.loading-text {
+    color: #2aff5c;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.loading-log {
+    color: #5f9e6e;
+    font-size: 12px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+/* Game Card */
+.game-card {
+    background: #0f140f;
+    border: 1px solid #2aff5c30;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.game-card:hover {
+    border-color: #2aff5c;
+    box-shadow: 0 0 10px rgba(42, 255, 92, 0.2);
+}
+
+.game-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px 20px;
+    background: #0a0f0a;
+    cursor: pointer;
+    border-bottom: 1px solid #2aff5c20;
+}
+
+.game-header:hover {
+    background: #111811;
+}
+
+.game-icon {
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #2aff5c;
+}
+
+.game-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-icon-placeholder {
+    font-size: 32px;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-title {
+    color: #2aff5c;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.game-console {
+    color: #5f9e6e;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.missable-count {
+    color: #ffcc00;
+    background: #2a2a0a;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.expand-icon {
+    color: #2aff5c;
+    font-size: 20px;
+}
+
+.game-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.game-content.open {
+    max-height: 2000px;
+    transition: max-height 0.6s ease-in;
+}
+
+.achievements-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Achievement Card */
+.achievement-card {
+    background: #0a0f0a;
+    border-left: 3px solid #2aff5c;
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+}
+
+.achievement-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.missable-badge {
+    background: #ffcc00;
+    color: #0a0f0a;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.achievement-desc {
+    color: #8a9e8a;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.achievement-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.achievement-points {
+    color: #2aff5c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.achievement-link {
+    background: transparent;
+    border: 1px solid #2aff5c;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #2aff5c;
+    font-size: 11px;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.achievement-link:hover {
+    background: #2aff5c;
+    color: #0a0f0a;
+}
+
+.empty-state {
+    background: #0f140f;
+    border: 1px dashed #2aff5c;
+    text-align: center;
+    padding: 50px;
+    color: #5f9e6e;
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #2aff5c30;
+    color: #2a5a2a;
+    font-size: 11px;
+}
