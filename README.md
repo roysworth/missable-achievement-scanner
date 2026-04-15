@@ -43,7 +43,7 @@ A personal tool that scans my RetroAchievements recently played games and shows 
 
 ## 💡 Why I Built This
 
-I got tired of playing a game for hours only to realize I missed a single achievement because I didn't talk to an NPC before some random point of no return. This scanner solves that frustration by telling me *before* I start – or continue – a game exactly what's missable and where to find the discussion.
+I got tired of playing a game for hours only to realize I missed a single achievement because I didn't talk to an NPC before some random point of no return. This scanner solves that frustration by telling me, *before* I start, what's missable. Also, a lot of the times you're also not going to know *how* the achievement is missable. Thus, the tool also provides a link to forum discussions that should bear helpful advice for when you tackle it.
 
 ---
 
